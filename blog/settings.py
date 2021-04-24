@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 from dotenv import load_dotenv
-load_dotenv()
+# load_dotenv()
 
 import django_heroku
 import dj_database_url #setup the database for heroku
@@ -30,12 +30,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY =" zs43=wj!uci7py%_0m*pao^t(tsf%!@bpwx3e6r&1&at_^bx=)"
+SECRET_KEY ="zs43=wj!uci7py%_0m*pao^t(tsf%!@bpwx3e6r&1&at_^bx=)"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["home-blog-webapp.herokuapp.com"]
 
 
 # Application definition
