@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     "taggit",
     "ckeditor",
     "crispy_forms",
-    "django_ajax",
+   
     #allauth
     'allauth',
     'allauth.account',
@@ -73,7 +73,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "django_ajax.middleware.AJAXMiddleware",
+   
     "whitenoise.middleware.WhiteNoiseMiddleware",
 ]
 
@@ -263,3 +263,7 @@ STATICFILES_DIRS=[
 ]
 
 
+STATICFILES_STORAGE="whitenoise.storage.CompressedManifestStaticFilesStorage"
+
+
+django_heroku.settings(locals())
